@@ -1,0 +1,48 @@
+/* src/components/TourGrid.css */
+.tour-grid {
+  width: 100%;
+  max-width: 1200px;  /* Ограничиваем ширину контейнера */
+  margin: 0 auto;  /* Выравнивание по центру */
+}
+
+.swiper-container {
+  width: 100%;  /* Ширина контейнера по 100% */
+  height: auto;  /* Высота адаптируется под содержимое */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;  /* Центрируем слайды */
+  align-items: center;
+}
+
+.tour-card {
+  display: flex;
+  flex-direction: column;  /* Размещаем контент (изображение и текст) вертикально */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;  /* Отступы */
+}
+
+.tour-card__image img {
+  width: 200px;  /* Фиксированная ширина изображения */
+  height: 200px;  /* Фиксированная высота изображения */
+  object-fit: cover;  /* Сохраняем пропорции изображения и обрезаем его по размеру */
+  border-radius: 8px;  /* Радиус для скругления углов */
+}
+
+.tour-card__info {
+  text-align: center;  /* Выравниваем текст по центру */
+  margin-top: 10px;  /* Отступ от изображения */
+}
+
+.tour-card__info h3 {
+  margin: 0;
+  font-size: 1.2rem;  /* Размер шрифта для заголовка */
+}
+
+.tour-card__info p {
+  font-size: 1rem;  /* Размер шрифта для описания */
+  color: #777;  /* Цвет текста для описания */
+}
